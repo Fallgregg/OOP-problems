@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/tariod/Programming/OOP-problems/entities/Goods.cpp">
+			<Option target="OOP_problems"/>
+		</Unit>
+		<Unit filename="/home/tariod/Programming/OOP-problems/entities/Goods.h">
+			<Option target="OOP_problems"/>
+		</Unit>
 		<Unit filename="/home/tariod/Programming/OOP-problems/main.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>

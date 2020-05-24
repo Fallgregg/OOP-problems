@@ -123,6 +123,33 @@ OOP_problems/fast:
 	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/build
 .PHONY : OOP_problems/fast
 
+entities/Goods.o: entities/Goods.cpp.o
+
+.PHONY : entities/Goods.o
+
+# target to build an object file
+entities/Goods.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/entities/Goods.cpp.o
+.PHONY : entities/Goods.cpp.o
+
+entities/Goods.i: entities/Goods.cpp.i
+
+.PHONY : entities/Goods.i
+
+# target to preprocess a source file
+entities/Goods.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/entities/Goods.cpp.i
+.PHONY : entities/Goods.cpp.i
+
+entities/Goods.s: entities/Goods.cpp.s
+
+.PHONY : entities/Goods.s
+
+# target to generate assembly for a file
+entities/Goods.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/entities/Goods.cpp.s
+.PHONY : entities/Goods.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OOP_problems"
+	@echo "... entities/Goods.o"
+	@echo "... entities/Goods.i"
+	@echo "... entities/Goods.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
