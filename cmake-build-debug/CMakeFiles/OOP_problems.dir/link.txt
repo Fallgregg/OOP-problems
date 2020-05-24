@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/OOP_problems.dir/main.cpp.o CMakeFiles/OOP_problems.dir/entities/Goods.cpp.o  -o OOP_problems 

@@ -3,4 +3,4 @@ project(OOP_problems)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(OOP_problems main.cpp entities/Goods.cpp entities/Goods.h entities/Client.cpp entities/Client.h entities/Order.cpp entities/Order.h)
+add_executable(OOP_problems main.cpp entities/Goods.cpp entities/Goods.h)

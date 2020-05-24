@@ -4,12 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/KPI/1course/2smstr/Term_paper/OOP-problems/entities/Client.cpp" "D:/KPI/1course/2smstr/Term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/entities/Client.cpp.obj"
-  "D:/KPI/1course/2smstr/Term_paper/OOP-problems/entities/Goods.cpp" "D:/KPI/1course/2smstr/Term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/entities/Goods.cpp.obj"
-  "D:/KPI/1course/2smstr/Term_paper/OOP-problems/entities/Order.cpp" "D:/KPI/1course/2smstr/Term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/entities/Order.cpp.obj"
-  "D:/KPI/1course/2smstr/Term_paper/OOP-problems/main.cpp" "D:/KPI/1course/2smstr/Term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/main.cpp.obj"
+  "/home/tariod/Programming/OOP-problems/entities/Goods.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/entities/Goods.cpp.o"
+  "/home/tariod/Programming/OOP-problems/main.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
