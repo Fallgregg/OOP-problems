@@ -31,7 +31,7 @@ public:
 
   ~CMS();
 
-  set<Goods> get_catalog();
+  vector<Goods> get_catalog();
 
   map<GoodsID, Quantity> get_shortages();
 

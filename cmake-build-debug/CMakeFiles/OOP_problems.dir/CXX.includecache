@@ -7,8 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/tariod/Programming/OOP-problems/src/catalog/Catalog.h
-set
--
 string
 -
 vector
@@ -21,18 +19,20 @@ CMS.h
 /home/tariod/Programming/OOP-problems/src/cms/CMS.h
 
 /home/tariod/Programming/OOP-problems/src/cms/CMS.h
+map
+-
 vector
 -
+../entities/Goods.h
+/home/tariod/Programming/OOP-problems/src/entities/Goods.h
 ../entities/Order.h
 /home/tariod/Programming/OOP-problems/src/entities/Order.h
+../warehouse/Warehouse.h
+/home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.h
 
 /home/tariod/Programming/OOP-problems/src/entities/Goods.h
 string
 -
-
-/home/tariod/Programming/OOP-problems/src/entities/Order.cpp
-Order.h
-/home/tariod/Programming/OOP-problems/src/entities/Order.h
 
 /home/tariod/Programming/OOP-problems/src/entities/Order.h
 map
@@ -46,6 +46,8 @@ Warehouse.h
 
 /home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.h
 map
+-
+string
 -
 vector
 -

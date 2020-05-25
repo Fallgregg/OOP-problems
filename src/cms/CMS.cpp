@@ -38,7 +38,7 @@ CMS::~CMS() {
   _orders.clear();
 }
 
-set<Goods> CMS::get_catalog() {
+vector<Goods> CMS::get_catalog() {
   return _warehouse.get_catalog();
 }
 

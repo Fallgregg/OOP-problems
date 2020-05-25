@@ -1,8 +1,8 @@
 #ifndef OOP_PROBLEMS_CATALOG_H
 #define OOP_PROBLEMS_CATALOG_H
 
-#include <set>
 #include <string>
+#include <vector>
 #include "../entities/Goods.h"
 
 using namespace std;
@@ -10,17 +10,17 @@ using namespace std;
 class Catalog {
 private:
   GoodsID _curr_id;
-  set<Goods *> _goods_set;
+  vector<Goods *> _goods_list;
 public:
   Catalog();
 
-  Catalog(set<string> title_set);
+  Catalog(vector<string> titles);
 
   ~Catalog();
 
   bool add_goods(string title);
 
-  set<Goods> get_catalog();
+  vector<Goods> get_catalog();
 
   Goods *get_by_id(GoodsID id);
 

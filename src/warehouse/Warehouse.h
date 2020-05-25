@@ -3,6 +3,7 @@
 
 #include <map>
 #include <string>
+#include <vector>
 #include "../catalog/Catalog.h"
 #include "../entities/Goods.h"
 
@@ -16,7 +17,7 @@ public:
   // TODO add goods
   Warehouse();
 
-  Warehouse(set<string> title_set);
+  Warehouse(vector<string> titles);
 
   ~Warehouse();
 
@@ -26,7 +27,7 @@ public:
 
   Quantity get_goods_quantity(GoodsID id);
 
-  set<Goods> get_catalog();
+  vector<Goods> get_catalog();
 
   bool push(map<GoodsID, Quantity> list);
 

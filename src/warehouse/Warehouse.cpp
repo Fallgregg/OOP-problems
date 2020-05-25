@@ -4,9 +4,9 @@ Warehouse::Warehouse() {
   _catalog = Catalog();
 }
 
-Warehouse::Warehouse(set<string> title_set) {
-  _catalog = Catalog(title_set);
-  set<Goods> catalog = _catalog.get_catalog();
+Warehouse::Warehouse(vector<string> titles) {
+  _catalog = Catalog(titles);
+  vector<Goods> catalog = _catalog.get_catalog();
 
   for (Goods goods : catalog) {
     _accounting[goods.get_id()] = 0;
@@ -30,7 +30,7 @@ bool Warehouse::is_exist(map<GoodsID, Quantity> list) {
   return true;
 }
 
-set<Goods> Warehouse::get_catalog() {
+vector <Goods> Warehouse::get_catalog() {
   return _catalog.get_catalog();
 }
 
