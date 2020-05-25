@@ -3,13 +3,20 @@
 
 #include <string>
 
+using namespace std;
+
+typedef unsigned int GoodsID;
+
 class Goods {
 private:
-  std::string _title;
+  GoodsID _id;
+  string _title;
 public:
-  Goods(std::string title);
+  Goods(GoodsID id, string title);
 
-  std::string get_title();
+  GoodsID get_id();
+
+  string get_title();
 };
 
 #endif //OOP_PROBLEMS_GOODS_H

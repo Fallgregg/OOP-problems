@@ -1,22 +1,25 @@
 #ifndef OOP_PROBLEMS_CATALOG_H
 #define OOP_PROBLEMS_CATALOG_H
 
-#include <map>
+#include <set>
+#include <string>
 #include <vector>
 #include "../entities/Goods.h"
 
-typedef unsigned int GoodsID;
+using namespace std;
 
 class Catalog {
 private:
   GoodsID _curr_id = 0;
-  std::map<GoodsID, Goods *> _goods_map;
+  set<Goods *> _goods_set;
 public:
-  bool add_goods(Goods *goods);
+  ~Catalog();
 
-  std::vector<Goods *> get_all();
+  bool add_goods(string title);
 
   Goods *get_by_id(GoodsID id);
+
+  Goods *get_by_title(string title);
 };
 
 #endif //OOP_PROBLEMS_CATALOG_H

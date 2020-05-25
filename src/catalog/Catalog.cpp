@@ -1,24 +1,40 @@
 #include "Catalog.h"
 
-bool Catalog::add_goods(Goods *goods) {
-  for (auto &it : _goods_map) {
-    if (it.second->get_title() == goods->get_title()) {
+Catalog::~Catalog() {
+  Goods *temp;
+  for (auto &it : _goods_set) {
+    temp = it;
+    _goods_set.erase(it);
+    delete temp;
+  }
+}
+
+bool Catalog::add_goods(string title) {
+  for (auto &it : _goods_set) {
+    if (it->get_title() == title) {
       return false;
     }
   }
-  _goods_map.insert(std::pair<GoodsID, Goods *>(_curr_id++, goods));
+  _goods_set.insert(new Goods(_curr_id++, title));
   return true;
 }
 
-std::vector<Goods *> Catalog::get_all() {
-  std::vector<Goods *> all;
-  for (auto &it : _goods_map) {
-    all.push_back(it.second);
+Goods *Catalog::get_by_id(GoodsID id) {
+  for (auto &it : _goods_set) {
+    if (it->get_id() == id) {
+      return it;
+    }
   }
-  return all;
+
+  return nullptr;
 }
 
-Goods *Catalog::get_by_id(GoodsID id) {
-  auto it = _goods_map.find(id);
-  return it != _goods_map.end() ? it->second : nullptr;
+Goods *Catalog::get_by_title(string title) {
+  for (auto &it : _goods_set) {
+    if (it->get_title() == title) {
+      return it;
+    }
+  }
+
+  return nullptr;
 }
