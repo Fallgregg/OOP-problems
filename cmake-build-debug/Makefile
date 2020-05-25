@@ -177,6 +177,33 @@ src/catalog/Catalog.cpp.s:
 	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.s
 .PHONY : src/catalog/Catalog.cpp.s
 
+src/cms/CMS.o: src/cms/CMS.cpp.o
+
+.PHONY : src/cms/CMS.o
+
+# target to build an object file
+src/cms/CMS.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o
+.PHONY : src/cms/CMS.cpp.o
+
+src/cms/CMS.i: src/cms/CMS.cpp.i
+
+.PHONY : src/cms/CMS.i
+
+# target to preprocess a source file
+src/cms/CMS.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.i
+.PHONY : src/cms/CMS.cpp.i
+
+src/cms/CMS.s: src/cms/CMS.cpp.s
+
+.PHONY : src/cms/CMS.s
+
+# target to generate assembly for a file
+src/cms/CMS.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.s
+.PHONY : src/cms/CMS.cpp.s
+
 src/entities/Goods.o: src/entities/Goods.cpp.o
 
 .PHONY : src/entities/Goods.o
@@ -203,6 +230,33 @@ src/entities/Goods.s: src/entities/Goods.cpp.s
 src/entities/Goods.cpp.s:
 	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.s
 .PHONY : src/entities/Goods.cpp.s
+
+src/entities/Order.o: src/entities/Order.cpp.o
+
+.PHONY : src/entities/Order.o
+
+# target to build an object file
+src/entities/Order.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o
+.PHONY : src/entities/Order.cpp.o
+
+src/entities/Order.i: src/entities/Order.cpp.i
+
+.PHONY : src/entities/Order.i
+
+# target to preprocess a source file
+src/entities/Order.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.i
+.PHONY : src/entities/Order.cpp.i
+
+src/entities/Order.s: src/entities/Order.cpp.s
+
+.PHONY : src/entities/Order.s
+
+# target to generate assembly for a file
+src/entities/Order.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.s
+.PHONY : src/entities/Order.cpp.s
 
 src/warehouse/Warehouse.o: src/warehouse/Warehouse.cpp.o
 
@@ -246,9 +300,15 @@ help:
 	@echo "... src/catalog/Catalog.o"
 	@echo "... src/catalog/Catalog.i"
 	@echo "... src/catalog/Catalog.s"
+	@echo "... src/cms/CMS.o"
+	@echo "... src/cms/CMS.i"
+	@echo "... src/cms/CMS.s"
 	@echo "... src/entities/Goods.o"
 	@echo "... src/entities/Goods.i"
 	@echo "... src/entities/Goods.s"
+	@echo "... src/entities/Order.o"
+	@echo "... src/entities/Order.i"
+	@echo "... src/entities/Order.s"
 	@echo "... src/warehouse/Warehouse.o"
 	@echo "... src/warehouse/Warehouse.i"
 	@echo "... src/warehouse/Warehouse.s"

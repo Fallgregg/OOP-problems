@@ -3,19 +3,24 @@
 
 #include <set>
 #include <string>
-#include <vector>
 #include "../entities/Goods.h"
 
 using namespace std;
 
 class Catalog {
 private:
-  GoodsID _curr_id = 0;
+  GoodsID _curr_id;
   set<Goods *> _goods_set;
 public:
+  Catalog();
+
+  Catalog(set<string> title_set);
+
   ~Catalog();
 
   bool add_goods(string title);
+
+  set<Goods> get_catalog();
 
   Goods *get_by_id(GoodsID id);
 

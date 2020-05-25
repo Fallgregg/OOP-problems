@@ -3,3 +3,24 @@
 
 CMakeFiles/OOP_problems.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o: ../src/catalog/Catalog.cpp
+CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o: ../src/catalog/Catalog.h
+CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o: ../src/entities/Goods.h
+
+CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o: ../src/cms/CMS.cpp
+CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o: ../src/cms/CMS.h
+CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o: ../src/entities/Goods.h
+CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o: ../src/entities/Order.h
+
+CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o: ../src/entities/Goods.cpp
+CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o: ../src/entities/Goods.h
+
+CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: ../src/entities/Goods.h
+CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: ../src/entities/Order.cpp
+CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: ../src/entities/Order.h
+
+CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/catalog/Catalog.h
+CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/entities/Goods.h
+CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/warehouse/Warehouse.cpp
+CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/warehouse/Warehouse.h
+

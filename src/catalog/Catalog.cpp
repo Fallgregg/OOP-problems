@@ -1,17 +1,27 @@
 #include "Catalog.h"
 
+Catalog::Catalog() {
+  _curr_id = 0;
+}
+
+Catalog::Catalog(set<string> title_set) {
+  for (auto &title : title_set) {
+    add_goods(title);
+  }
+}
+
 Catalog::~Catalog() {
   Goods *temp;
-  for (auto &it : _goods_set) {
-    temp = it;
-    _goods_set.erase(it);
+  for (auto &goods : _goods_set) {
+    temp = goods;
+    _goods_set.erase(goods);
     delete temp;
   }
 }
 
 bool Catalog::add_goods(string title) {
-  for (auto &it : _goods_set) {
-    if (it->get_title() == title) {
+  for (auto &goods : _goods_set) {
+    if (goods->get_title() == title) {
       return false;
     }
   }
@@ -19,10 +29,18 @@ bool Catalog::add_goods(string title) {
   return true;
 }
 
+set<Goods> Catalog::get_catalog() {
+  set<Goods> temp;
+  for (Goods *goods : _goods_set) {
+    temp.insert(Goods(goods->get_id(), goods->get_title()));
+  }
+  return temp;
+}
+
 Goods *Catalog::get_by_id(GoodsID id) {
-  for (auto &it : _goods_set) {
-    if (it->get_id() == id) {
-      return it;
+  for (auto &goods : _goods_set) {
+    if (goods->get_id() == id) {
+      return goods;
     }
   }
 
@@ -30,9 +48,9 @@ Goods *Catalog::get_by_id(GoodsID id) {
 }
 
 Goods *Catalog::get_by_title(string title) {
-  for (auto &it : _goods_set) {
-    if (it->get_title() == title) {
-      return it;
+  for (auto &goods : _goods_set) {
+    if (goods->get_title() == title) {
+      return goods;
     }
   }
 
