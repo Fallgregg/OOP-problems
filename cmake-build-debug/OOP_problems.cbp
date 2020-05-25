@@ -99,6 +99,12 @@
 		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Goods.h">
 			<Option target="OOP_problems"/>
 		</Unit>
+		<Unit filename="/home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.cpp">
+			<Option target="OOP_problems"/>
+		</Unit>
+		<Unit filename="/home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.h">
+			<Option target="OOP_problems"/>
+		</Unit>
 		<Unit filename="/home/tariod/Programming/OOP-problems/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
