@@ -1,9 +1,14 @@
 #include "Goods.h"
 
-Goods::Goods(std::string title) {
+Goods::Goods(GoodsID id, string title) {
+  _id = id;
   _title = title;
 }
 
-std::string Goods::get_title() {
+GoodsID Goods::get_id() {
+  return _id;
+}
+
+string Goods::get_title() {
   return _title;
 }

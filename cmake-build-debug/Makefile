@@ -204,6 +204,33 @@ src/entities/Goods.cpp.s:
 	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.s
 .PHONY : src/entities/Goods.cpp.s
 
+src/warehouse/Warehouse.o: src/warehouse/Warehouse.cpp.o
+
+.PHONY : src/warehouse/Warehouse.o
+
+# target to build an object file
+src/warehouse/Warehouse.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o
+.PHONY : src/warehouse/Warehouse.cpp.o
+
+src/warehouse/Warehouse.i: src/warehouse/Warehouse.cpp.i
+
+.PHONY : src/warehouse/Warehouse.i
+
+# target to preprocess a source file
+src/warehouse/Warehouse.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.i
+.PHONY : src/warehouse/Warehouse.cpp.i
+
+src/warehouse/Warehouse.s: src/warehouse/Warehouse.cpp.s
+
+.PHONY : src/warehouse/Warehouse.s
+
+# target to generate assembly for a file
+src/warehouse/Warehouse.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.s
+.PHONY : src/warehouse/Warehouse.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... src/entities/Goods.o"
 	@echo "... src/entities/Goods.i"
 	@echo "... src/entities/Goods.s"
+	@echo "... src/warehouse/Warehouse.o"
+	@echo "... src/warehouse/Warehouse.i"
+	@echo "... src/warehouse/Warehouse.s"
 .PHONY : help
 
 
