@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/tariod/Programming/OOP-problems/cmake-build-debug"/>
+				<Option working_dir="/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/tariod/Programming/OOP-problems/cmake-build-debug"/>
+				<Option working_dir="/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/tariod/Programming/OOP-problems/cmake-build-debug"/>
+				<Option working_dir="/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="OOP_problems">
-				<Option output="/home/tariod/Programming/OOP-problems/cmake-build-debug/OOP_problems" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tariod/Programming/OOP-problems/cmake-build-debug"/>
+				<Option output="/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/OOP_problems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 OOP_problems"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 OOP_problems"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="OOP_problems/fast">
-				<Option output="/home/tariod/Programming/OOP-problems/cmake-build-debug/OOP_problems" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/tariod/Programming/OOP-problems/cmake-build-debug"/>
+				<Option output="/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/OOP_problems" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,47 +77,47 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 OOP_problems/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/tariod/Programming/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 OOP_problems/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tariod/Programming/OOP-problems/main.cpp">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/main.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/catalog/Catalog.cpp">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/catalog/Catalog.h">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.h">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/cms/CMS.cpp">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/cms/CMS.h">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.h">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Goods.cpp">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Goods.h">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Order.cpp">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Order.h">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.h">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.cpp">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.h">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.h">
 			<Option target="OOP_problems"/>
 		</Unit>
-		<Unit filename="/home/tariod/Programming/OOP-problems/CMakeLists.txt">
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

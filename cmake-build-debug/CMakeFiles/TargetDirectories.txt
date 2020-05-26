@@ -1,3 +1,3 @@
-/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir
+/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir

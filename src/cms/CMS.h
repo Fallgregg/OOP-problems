@@ -2,6 +2,7 @@
 #define OOP_PROBLEMS_CMS_H
 
 #include <map>
+#include <string>
 #include <vector>
 #include "../entities/Goods.h"
 #include "../entities/Order.h"
@@ -29,7 +30,11 @@ private:
 public:
   CMS();
 
+  CMS(vector<string> titles);
+
   ~CMS();
+
+  bool add_goods(string title);
 
   vector<Goods> get_catalog();
 

@@ -18,7 +18,7 @@ Warehouse::~Warehouse() {
 }
 
 bool Warehouse::is_exist(GoodsID goods_id) {
-  return _catalog.get_by_id(goods_id);
+  return (bool) _catalog.get_by_id(goods_id);
 }
 
 bool Warehouse::is_exist(map<GoodsID, Quantity> list) {
@@ -30,8 +30,28 @@ bool Warehouse::is_exist(map<GoodsID, Quantity> list) {
   return true;
 }
 
-vector <Goods> Warehouse::get_catalog() {
+bool Warehouse::add_goods(string title) {
+  if (_catalog.add_goods(title)) {
+    Goods *goods = _catalog.get_by_title(title);
+    if (goods) {
+      _accounting[goods->get_id()] = 0;
+      return true;
+    }
+  }
+
+  return false;
+}
+
+vector<Goods> Warehouse::get_catalog() {
   return _catalog.get_catalog();
+}
+
+Goods * Warehouse::get_goods_by_id(GoodsID id) {
+  return _catalog.get_by_id(id);
+}
+
+Goods * Warehouse::get_goods_by_title(string title) {
+  return _catalog.get_by_title(title);
 }
 
 Quantity Warehouse::get_goods_quantity(GoodsID id) {

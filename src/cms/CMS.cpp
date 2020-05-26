@@ -28,6 +28,18 @@ CMS::CMS() {
   _warehouse = Warehouse();
 }
 
+CMS::CMS(vector<string> titles) {
+  _curr_id = 0;
+  _warehouse = Warehouse(titles);
+  vector<Goods> catalog = _warehouse.get_catalog();
+
+
+  for (Goods goods : catalog) {
+    _shortages[goods.get_id()] = 0;
+    _reservations[goods.get_id()] = 0;
+  }
+}
+
 CMS::~CMS() {
   _shortages.clear();
   _reservations.clear();
@@ -36,6 +48,19 @@ CMS::~CMS() {
     delete order;
   }
   _orders.clear();
+}
+
+bool CMS::add_goods(string title) {
+  if (_warehouse.add_goods(title)) {
+    Goods *goods = _warehouse.get_goods_by_title(title);
+    if (goods) {
+      _shortages[goods->get_id()] = 0;
+      _reservations[goods->get_id()] = 0;
+      return true;
+    }
+  }
+
+  return false;
 }
 
 vector<Goods> CMS::get_catalog() {

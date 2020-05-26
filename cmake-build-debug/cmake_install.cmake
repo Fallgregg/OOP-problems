@@ -1,4 +1,4 @@
-# Install script for directory: /home/tariod/Programming/OOP-problems
+# Install script for directory: /home/fallgregg/1course_term_paper/OOP-problems
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tariod/Programming/OOP-problems/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

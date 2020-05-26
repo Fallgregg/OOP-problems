@@ -43,10 +43,10 @@ RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tariod/Programming/OOP-problems
+CMAKE_SOURCE_DIR = /home/fallgregg/1course_term_paper/OOP-problems
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tariod/Programming/OOP-problems/cmake-build-debug
+CMAKE_BINARY_DIR = /home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/OOP_problems.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/OOP_problems.dir/flags.make
 
 CMakeFiles/OOP_problems.dir/main.cpp.o: CMakeFiles/OOP_problems.dir/flags.make
 CMakeFiles/OOP_problems.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_problems.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/main.cpp.o -c /home/tariod/Programming/OOP-problems/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OOP_problems.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/main.cpp.o -c /home/fallgregg/1course_term_paper/OOP-problems/main.cpp
 
 CMakeFiles/OOP_problems.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_problems.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tariod/Programming/OOP-problems/main.cpp > CMakeFiles/OOP_problems.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fallgregg/1course_term_paper/OOP-problems/main.cpp > CMakeFiles/OOP_problems.dir/main.cpp.i
 
 CMakeFiles/OOP_problems.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_problems.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tariod/Programming/OOP-problems/main.cpp -o CMakeFiles/OOP_problems.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fallgregg/1course_term_paper/OOP-problems/main.cpp -o CMakeFiles/OOP_problems.dir/main.cpp.s
 
 CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o: CMakeFiles/OOP_problems.dir/flags.make
 CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o: ../src/entities/Goods.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o -c /home/tariod/Programming/OOP-problems/src/entities/Goods.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o -c /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.cpp
 
 CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tariod/Programming/OOP-problems/src/entities/Goods.cpp > CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.cpp > CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.i
 
 CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tariod/Programming/OOP-problems/src/entities/Goods.cpp -o CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.cpp -o CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.s
 
 CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o: CMakeFiles/OOP_problems.dir/flags.make
 CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o: ../src/catalog/Catalog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o -c /home/tariod/Programming/OOP-problems/src/catalog/Catalog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o -c /home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.cpp
 
 CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tariod/Programming/OOP-problems/src/catalog/Catalog.cpp > CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.cpp > CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.i
 
 CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tariod/Programming/OOP-problems/src/catalog/Catalog.cpp -o CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.cpp -o CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.s
 
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: CMakeFiles/OOP_problems.dir/flags.make
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/warehouse/Warehouse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o -c /home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o -c /home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.cpp
 
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.cpp > CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.cpp > CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.i
 
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.cpp -o CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.cpp -o CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.s
 
 CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o: CMakeFiles/OOP_problems.dir/flags.make
 CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o: ../src/cms/CMS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o -c /home/tariod/Programming/OOP-problems/src/cms/CMS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o -c /home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.cpp
 
 CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tariod/Programming/OOP-problems/src/cms/CMS.cpp > CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.cpp > CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.i
 
 CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tariod/Programming/OOP-problems/src/cms/CMS.cpp -o CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.cpp -o CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.s
 
 CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: CMakeFiles/OOP_problems.dir/flags.make
 CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: ../src/entities/Order.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o -c /home/tariod/Programming/OOP-problems/src/entities/Order.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o -c /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.cpp
 
 CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tariod/Programming/OOP-problems/src/entities/Order.cpp > CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.cpp > CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.i
 
 CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tariod/Programming/OOP-problems/src/entities/Order.cpp -o CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.cpp -o CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.s
 
 # Object files for target OOP_problems
 OOP_problems_OBJECTS = \
@@ -155,7 +155,7 @@ OOP_problems: CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o
 OOP_problems: CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o
 OOP_problems: CMakeFiles/OOP_problems.dir/build.make
 OOP_problems: CMakeFiles/OOP_problems.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OOP_problems"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable OOP_problems"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OOP_problems.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +168,6 @@ CMakeFiles/OOP_problems.dir/clean:
 .PHONY : CMakeFiles/OOP_problems.dir/clean
 
 CMakeFiles/OOP_problems.dir/depend:
-	cd /home/tariod/Programming/OOP-problems/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tariod/Programming/OOP-problems /home/tariod/Programming/OOP-problems /home/tariod/Programming/OOP-problems/cmake-build-debug /home/tariod/Programming/OOP-problems/cmake-build-debug /home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fallgregg/1course_term_paper/OOP-problems /home/fallgregg/1course_term_paper/OOP-problems /home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug /home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug /home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/OOP_problems.dir/depend
 
