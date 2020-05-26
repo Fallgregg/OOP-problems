@@ -21,6 +21,14 @@ CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: ../src/entities/Goods.h
 CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: ../src/entities/Order.cpp
 CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o: ../src/entities/Order.h
 
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o: ../src/catalog/Catalog.h
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o: ../src/cms/CMS.h
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o: ../src/entities/Goods.h
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o: ../src/entities/Order.h
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o: ../src/logger/Logger.cpp
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o: ../src/logger/Logger.h
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o: ../src/warehouse/Warehouse.h
+
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/catalog/Catalog.h
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/entities/Goods.h
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o: ../src/warehouse/Warehouse.cpp

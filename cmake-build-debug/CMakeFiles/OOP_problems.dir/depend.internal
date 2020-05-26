@@ -21,6 +21,14 @@ CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o
  /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h
  /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.cpp
  /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.h
+CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o
+ /home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.h
+ /home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.h
+ /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h
+ /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.h
+ /home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.cpp
+ /home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.h
+ /home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.h
 CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o
  /home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.h
  /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h

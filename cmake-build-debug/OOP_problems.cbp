@@ -111,6 +111,12 @@
 		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.h">
 			<Option target="OOP_problems"/>
 		</Unit>
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.cpp">
+			<Option target="OOP_problems"/>
+		</Unit>
+		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.h">
+			<Option target="OOP_problems"/>
+		</Unit>
 		<Unit filename="/home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>

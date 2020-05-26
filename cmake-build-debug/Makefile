@@ -258,6 +258,33 @@ src/entities/Order.cpp.s:
 	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.s
 .PHONY : src/entities/Order.cpp.s
 
+src/logger/Logger.o: src/logger/Logger.cpp.o
+
+.PHONY : src/logger/Logger.o
+
+# target to build an object file
+src/logger/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o
+.PHONY : src/logger/Logger.cpp.o
+
+src/logger/Logger.i: src/logger/Logger.cpp.i
+
+.PHONY : src/logger/Logger.i
+
+# target to preprocess a source file
+src/logger/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.i
+.PHONY : src/logger/Logger.cpp.i
+
+src/logger/Logger.s: src/logger/Logger.cpp.s
+
+.PHONY : src/logger/Logger.s
+
+# target to generate assembly for a file
+src/logger/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/OOP_problems.dir/build.make CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.s
+.PHONY : src/logger/Logger.cpp.s
+
 src/warehouse/Warehouse.o: src/warehouse/Warehouse.cpp.o
 
 .PHONY : src/warehouse/Warehouse.o
@@ -309,6 +336,9 @@ help:
 	@echo "... src/entities/Order.o"
 	@echo "... src/entities/Order.i"
 	@echo "... src/entities/Order.s"
+	@echo "... src/logger/Logger.o"
+	@echo "... src/logger/Logger.i"
+	@echo "... src/logger/Logger.s"
 	@echo "... src/warehouse/Warehouse.o"
 	@echo "... src/warehouse/Warehouse.i"
 	@echo "... src/warehouse/Warehouse.s"

@@ -42,8 +42,26 @@ map
 Goods.h
 /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h
 
-/home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.cpp
-Warehouse.h
+/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.cpp
+Logger.h
+/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.h
+
+/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.h
+map
+-
+string
+-
+vector
+-
+iostream
+-
+../cms/CMS.h
+/home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.h
+../entities/Goods.h
+/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h
+../entities/Order.h
+/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.h
+../warehouse/Warehouse.h
 /home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.h
 
 /home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.h

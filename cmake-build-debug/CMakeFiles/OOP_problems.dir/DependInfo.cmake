@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.cpp" "/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o"
   "/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.cpp" "/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o"
   "/home/fallgregg/1course_term_paper/OOP-problems/src/entities/Order.cpp" "/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o"
+  "/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.cpp" "/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/logger/Logger.cpp.o"
   "/home/fallgregg/1course_term_paper/OOP-problems/src/warehouse/Warehouse.cpp" "/home/fallgregg/1course_term_paper/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
