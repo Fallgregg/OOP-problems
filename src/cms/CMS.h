@@ -42,6 +42,8 @@ public:
 
   map<GoodsID, Quantity> get_reservations();
 
+  vector<Order *> get_order_list();
+
   Order *get_order_info(OrderID id);
 
   bool add_stock(map<GoodsID, Quantity> list);

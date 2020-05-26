@@ -75,6 +75,14 @@ map<GoodsID, Quantity> CMS::get_reservations() {
   return _reservations;
 }
 
+vector<Order *> CMS::get_order_list() {
+  vector<Order *> temp;
+  for (auto &order : _orders) {
+    temp.push_back(get_order_copy(order));
+  }
+  return temp;
+}
+
 Order *CMS::get_order_info(OrderID id) {
   Order *order = get_order_by_id(id);
   if (order) {
@@ -146,10 +154,10 @@ Order *CMS::get_order(OrderID id) {
       for (auto &it : goods_list) {
         GoodsID goods_id = it.first;
         Quantity goods_quantity = it.second;
-        _shortages[goods_id] -= goods_quantity;
+        _reservations[goods_id] -= goods_quantity;
+        order->set_status(Status::COMPLETED);
+        return get_order_copy(order);
       }
-      order->set_status(Status::COMPLETED);
-      return get_order_copy(order);
     }
   }
 
