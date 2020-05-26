@@ -88,7 +88,6 @@ Order *CMS::get_order_info(OrderID id) {
   if (order) {
     return get_order_copy(order);
   }
-
   return nullptr;
 }
 

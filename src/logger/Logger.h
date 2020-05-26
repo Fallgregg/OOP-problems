@@ -13,12 +13,11 @@
 class Logger {
 public:
   CMS _cms;
-  map<GoodsID, Quantity> _shortages;
-  map<GoodsID, Quantity> _reservations;
+//  map<GoodsID, Quantity> _shortages;
+//  map<GoodsID, Quantity> _reservations;
+//
+//  vector<Order *> _orders;
 
-  vector<Order *> _orders;
-
-private:
   Logger();
 
   void add_goods(string title);

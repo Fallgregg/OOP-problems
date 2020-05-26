@@ -22,7 +22,6 @@ void Logger::get_catalog() {
 }
 
 void Logger::get_shortages() {
-  //вывод количества для докупки
   cout << "\nA list of goods to buy:\n";
   map<GoodsID, Quantity> shortages = _cms.get_shortages();
   for(auto &it : shortages) {
@@ -33,7 +32,6 @@ void Logger::get_shortages() {
 }
 
 void Logger::get_reservations() {
-  //вывод коллиичества брони
   cout << "\nA list of reservations:\n";
   map<GoodsID, Quantity> reservation = _cms.get_reservations();
   for(auto &it : reservation) {
@@ -52,37 +50,44 @@ void Logger::get_order_list() {
 }
 
 void Logger::get_order_info(OrderID id) {
-  if(_cms.get_order_info(id)) {
-    cout << _cms.get_order_info(id) << endl;
+  Order *order = _cms.get_order_info(id);
+  if(order == nullptr) {
+    cout << "\nOrder is not completed.\n";
   } else {
-    cout << "\nOrder is not complited\n";
+    cout << "" << endl;
   }
 }
 
 void Logger::add_stock(map<GoodsID, Quantity> list) {
-  // что тут выводить на экран?
+  //не могу разобраться как сделать то что ты сказал
+
 }
 
 void Logger::make_order(map<GoodsID, Quantity> list) {
   if((int) (_cms.make_order(list)== -1 )) {
-    cout << "\nOrder was not found on warehouse\n";
+    cout << "\nOrder was not found.\n";
   } else {
     // что тут выводить на экран?
   }
 }
 
 void Logger::collect_order(OrderID id) {
-  if(_cms.collect_order(id)) {
-    cout << "\nOrder status : PREPARED.\n";
+  bool order = _cms.collect_order(id);
+  if (order) {
+    cout << "Order " << id << " : PREPARED.\n";
   } else {
-    cout << "\nOrder status : PROCESSING.\n";
+    cout << "\nThere is no order to collect.\n";
   }
 }
 
 void Logger::get_order(OrderID id) {
-  if(_cms.get_order(id) == nullptr) {
-    cout << "\nOrder status : PREPARED.\n";
+  vector<Order *> order = _cms.get_order_list();
+
+  if (_cms.get_order(id)) {
+    for (auto &good : order) {
+      cout << good->get_id() << ":" << good->get_status() << endl;
+    }
   } else {
-    cout << "\nOrder status : COMPLETED.\n";
+      cout << "\nNo order had been found.\n";
+    }
   }
-}
