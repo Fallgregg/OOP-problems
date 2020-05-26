@@ -93,10 +93,22 @@
 		<Unit filename="/home/tariod/Programming/OOP-problems/src/catalog/Catalog.h">
 			<Option target="OOP_problems"/>
 		</Unit>
+		<Unit filename="/home/tariod/Programming/OOP-problems/src/cms/CMS.cpp">
+			<Option target="OOP_problems"/>
+		</Unit>
+		<Unit filename="/home/tariod/Programming/OOP-problems/src/cms/CMS.h">
+			<Option target="OOP_problems"/>
+		</Unit>
 		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Goods.cpp">
 			<Option target="OOP_problems"/>
 		</Unit>
 		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Goods.h">
+			<Option target="OOP_problems"/>
+		</Unit>
+		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Order.cpp">
+			<Option target="OOP_problems"/>
+		</Unit>
+		<Unit filename="/home/tariod/Programming/OOP-problems/src/entities/Order.h">
 			<Option target="OOP_problems"/>
 		</Unit>
 		<Unit filename="/home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.cpp">

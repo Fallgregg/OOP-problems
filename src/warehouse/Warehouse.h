@@ -2,6 +2,8 @@
 #define OOP_PROBLEMS_WAREHOUSE_H
 
 #include <map>
+#include <string>
+#include <vector>
 #include "../catalog/Catalog.h"
 #include "../entities/Goods.h"
 
@@ -10,16 +12,26 @@ using namespace std;
 class Warehouse {
 private:
   Catalog _catalog;
-  map<GoodsID, unsigned int> _accounting;
-
-  bool check_existence(vector<GoodsID> list);
-
-  void push_back(vector<Goods *> package);
-
+  map<GoodsID, Quantity> _accounting;
 public:
-  bool push(vector<GoodsID> list);
+  // TODO add goods
+  Warehouse();
 
-  vector<Goods *> take(vector<GoodsID> list);
+  Warehouse(vector<string> titles);
+
+  ~Warehouse();
+
+  bool is_exist(GoodsID goods_id);
+
+  bool is_exist(map<GoodsID, Quantity> list);
+
+  Quantity get_goods_quantity(GoodsID id);
+
+  vector<Goods> get_catalog();
+
+  bool push(map<GoodsID, Quantity> list);
+
+  bool take(map<GoodsID, Quantity> list);
 };
 
 #endif //OOP_PROBLEMS_WAREHOUSE_H

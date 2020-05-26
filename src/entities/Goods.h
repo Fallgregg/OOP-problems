@@ -7,6 +7,8 @@ using namespace std;
 
 typedef unsigned int GoodsID;
 
+typedef unsigned int Quantity;
+
 class Goods {
 private:
   GoodsID _id;

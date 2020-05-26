@@ -6,7 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/tariod/Programming/OOP-problems/main.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/main.cpp.o"
   "/home/tariod/Programming/OOP-problems/src/catalog/Catalog.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/catalog/Catalog.cpp.o"
+  "/home/tariod/Programming/OOP-problems/src/cms/CMS.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/cms/CMS.cpp.o"
   "/home/tariod/Programming/OOP-problems/src/entities/Goods.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/entities/Goods.cpp.o"
+  "/home/tariod/Programming/OOP-problems/src/entities/Order.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/entities/Order.cpp.o"
   "/home/tariod/Programming/OOP-problems/src/warehouse/Warehouse.cpp" "/home/tariod/Programming/OOP-problems/cmake-build-debug/CMakeFiles/OOP_problems.dir/src/warehouse/Warehouse.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
