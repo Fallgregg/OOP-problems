@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/fallgregg/1course_term_paper/OOP-problems/main.cpp
+iostream
+-
+src/logger/Logger.h
+/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.h
+
 /home/fallgregg/1course_term_paper/OOP-problems/src/catalog/Catalog.h
 string
 -
@@ -13,10 +19,6 @@ vector
 -
 ../entities/Goods.h
 /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h
-
-/home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.cpp
-CMS.h
-/home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.h
 
 /home/fallgregg/1course_term_paper/OOP-problems/src/cms/CMS.h
 map
@@ -41,10 +43,6 @@ map
 -
 Goods.h
 /home/fallgregg/1course_term_paper/OOP-problems/src/entities/Goods.h
-
-/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.cpp
-Logger.h
-/home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.h
 
 /home/fallgregg/1course_term_paper/OOP-problems/src/logger/Logger.h
 map

@@ -1,6 +1,7 @@
-#include <iostream>
+#include "src/logger/Logger.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+  Logger *test = new Logger();
+
+  return 0;
 }
