@@ -1,24 +1,38 @@
 #include "Warehouse.h"
 
 Warehouse::Warehouse() {
-  _catalog = Catalog();
+  _catalog = new Catalog();
 }
 
 Warehouse::Warehouse(vector<string> titles) {
-  _catalog = Catalog(titles);
-  vector<Goods> catalog = _catalog.get_catalog();
+  _catalog = new Catalog(titles);
+  vector<Goods> catalog = _catalog->get_catalog();
 
   for (Goods goods : catalog) {
     _accounting[goods.get_id()] = 0;
   }
 }
 
+Warehouse::Warehouse(map<string, Quantity> list) {
+  vector<string> titles;
+  for (auto &it: list) {
+    titles.push_back(it.first);
+  }
+  _catalog = new Catalog(titles);
+  vector<Goods> catalog = _catalog->get_catalog();
+
+  for (Goods goods : catalog) {
+    _accounting[goods.get_id()] = list[goods.get_title()];
+  }
+}
+
 Warehouse::~Warehouse() {
   _accounting.clear();
+  delete _catalog;
 }
 
 bool Warehouse::is_exist(GoodsID goods_id) {
-  return (bool) _catalog.get_by_id(goods_id);
+  return _catalog->get_by_id(goods_id) != nullptr;
 }
 
 bool Warehouse::is_exist(map<GoodsID, Quantity> list) {
@@ -31,9 +45,9 @@ bool Warehouse::is_exist(map<GoodsID, Quantity> list) {
 }
 
 bool Warehouse::add_goods(string title) {
-  if (_catalog.add_goods(title)) {
-    Goods *goods = _catalog.get_by_title(title);
-    if (goods) {
+  if (_catalog->add_goods(title)) {
+    Goods *goods = _catalog->get_by_title(title);
+    if (goods != nullptr) {
       _accounting[goods->get_id()] = 0;
       return true;
     }
@@ -43,15 +57,15 @@ bool Warehouse::add_goods(string title) {
 }
 
 vector<Goods> Warehouse::get_catalog() {
-  return _catalog.get_catalog();
+  return _catalog->get_catalog();
 }
 
-Goods * Warehouse::get_goods_by_id(GoodsID id) {
-  return _catalog.get_by_id(id);
+Goods *Warehouse::get_goods_by_id(GoodsID id) {
+  return _catalog->get_by_id(id);
 }
 
-Goods * Warehouse::get_goods_by_title(string title) {
-  return _catalog.get_by_title(title);
+Goods *Warehouse::get_goods_by_title(string title) {
+  return _catalog->get_by_title(title);
 }
 
 Quantity Warehouse::get_goods_quantity(GoodsID id) {

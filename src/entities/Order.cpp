@@ -12,6 +12,10 @@ Order::Order(OrderID id, map<GoodsID, Quantity> list, Status status) {
   _list = list;
 }
 
+Order::~Order() {
+  _list.clear();
+}
+
 OrderID Order::get_id() {
   return _id;
 }

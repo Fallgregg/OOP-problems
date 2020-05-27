@@ -12,7 +12,7 @@ class CMS {
 private:
   OrderID _curr_id;
 
-  Warehouse _warehouse;
+  Warehouse *_warehouse;
 
   map<GoodsID, Quantity> _shortages;
   map<GoodsID, Quantity> _reservations;
@@ -31,6 +31,8 @@ public:
   CMS();
 
   CMS(vector<string> titles);
+
+  CMS(map<string, Quantity> list);
 
   ~CMS();
 

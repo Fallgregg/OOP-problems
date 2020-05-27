@@ -22,6 +22,8 @@ public:
 
   Order(OrderID id, map<GoodsID, Quantity> list, Status status);
 
+  ~Order();
+
   OrderID get_id();
 
   Status get_status();

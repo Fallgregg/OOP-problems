@@ -11,14 +11,12 @@
 #include "../warehouse/Warehouse.h"
 
 class Logger {
+private:
+  CMS *_cms;
 public:
-  CMS _cms;
-//  map<GoodsID, Quantity> _shortages;
-//  map<GoodsID, Quantity> _reservations;
-//
-//  vector<Order *> _orders;
-
   Logger();
+
+  ~Logger();
 
   void add_goods(string title);
 
@@ -40,6 +38,5 @@ public:
 
   void get_order(OrderID id);
 };
-
 
 #endif //OOP_PROBLEMS_LOGGER_H

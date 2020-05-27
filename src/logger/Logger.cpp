@@ -2,11 +2,15 @@
 
 Logger::Logger() {
   vector<string> base_list = {"Door", "Window", "Wallpapers"};
-  _cms = CMS(base_list);
+  _cms = new CMS(base_list);
+}
+
+Logger::~Logger() {
+  delete _cms;
 }
 
 void Logger::add_goods(string title) {
-  if (_cms.add_goods(title)) {
+  if (_cms->add_goods(title)) {
     cout << "New item was successfully added.\n";
   } else {
     cout << "New item was not added!\n";
@@ -15,7 +19,7 @@ void Logger::add_goods(string title) {
 
 void Logger::get_catalog() {
   cout << "\nCatalog of goods:\n";
-  vector<Goods> catalog = _cms.get_catalog();
+  vector<Goods> catalog = _cms->get_catalog();
   for (auto &good: catalog) {
     cout << good.get_id() << ":" << good.get_title() << endl;
   }
@@ -23,7 +27,7 @@ void Logger::get_catalog() {
 
 void Logger::get_shortages() {
   cout << "\nA list of goods to buy:\n";
-  map<GoodsID, Quantity> shortages = _cms.get_shortages();
+  map<GoodsID, Quantity> shortages = _cms->get_shortages();
   for (auto &it : shortages) {
     GoodsID goods_id = it.first;
     Quantity goods_quantity = it.second;
@@ -33,7 +37,7 @@ void Logger::get_shortages() {
 
 void Logger::get_reservations() {
   cout << "\nA list of reservations:\n";
-  map<GoodsID, Quantity> reservation = _cms.get_reservations();
+  map<GoodsID, Quantity> reservation = _cms->get_reservations();
   for (auto &it : reservation) {
     GoodsID goods_id = it.first;
     Quantity goods_quantity = it.second;
@@ -43,15 +47,15 @@ void Logger::get_reservations() {
 
 void Logger::get_order_list() {
   cout << "\nOrder list: \n";
-  vector<Order *> order_list = _cms.get_order_list();
+  vector<Order *> order_list = _cms->get_order_list();
   for (auto &order : order_list) {
     cout << order->get_id() << ":" << order->get_status();
   }
 }
 
 void Logger::get_order_info(OrderID id) {
-  Order *order = _cms.get_order_info(id);
-  if (order) {
+  Order *order = _cms->get_order_info(id);
+  if (order != nullptr) {
     cout << order->get_id() << ":" << order->get_status() << endl;
     cout << "\nList of goods:\n";
     for (auto &it : order->get_list()) {
@@ -68,7 +72,7 @@ void Logger::add_stock(map<GoodsID, Quantity> list) {
     cout << it.first << ":" << it.second << endl;
   }
 
-  if (!_cms.add_stock(list)) {
+  if (!_cms->add_stock(list)) {
     cout << "Good was not added to the catalog.\n";
   } else {
     cout << "Good was added to the warehouse.\n";
@@ -81,7 +85,7 @@ void Logger::make_order(map<GoodsID, Quantity> list) {
     cout << it.first << ":" << it.second << endl;
   }
 
-  int id = _cms.make_order(list);
+  int id = _cms->make_order(list);
   if (id == -1) {
     cout << "\nGood was not added to the catalog.\n";
   } else {
@@ -90,7 +94,7 @@ void Logger::make_order(map<GoodsID, Quantity> list) {
 }
 
 void Logger::collect_order(OrderID id) {
-  bool result = _cms.collect_order(id);
+  bool result = _cms->collect_order(id);
   if (result) {
     cout << "Order " << id << " : PREPARED.\n";
   } else {
@@ -99,9 +103,9 @@ void Logger::collect_order(OrderID id) {
 }
 
 void Logger::get_order(OrderID id) {
-  Order *order = _cms.get_order(id);
+  Order *order = _cms->get_order(id);
 
-  if (order) {
+  if (order != nullptr) {
     cout << order->get_id() << ":" << order->get_status() << endl;
     cout << "\nList of goods:\n";
     for (auto &it : order->get_list()) {

@@ -11,13 +11,14 @@ using namespace std;
 
 class Warehouse {
 private:
-  Catalog _catalog;
+  Catalog *_catalog;
   map<GoodsID, Quantity> _accounting;
 public:
-  // TODO add goods
   Warehouse();
 
   Warehouse(vector<string> titles);
+
+  Warehouse(map<string, Quantity> list);
 
   ~Warehouse();
 

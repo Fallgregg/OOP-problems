@@ -25,13 +25,25 @@ Order *CMS::get_order_copy(Order *order) {
 
 CMS::CMS() {
   _curr_id = 0;
-  _warehouse = Warehouse();
+  _warehouse = new Warehouse();
 }
 
 CMS::CMS(vector<string> titles) {
   _curr_id = 0;
-  _warehouse = Warehouse(titles);
-  vector<Goods> catalog = _warehouse.get_catalog();
+  _warehouse = new Warehouse(titles);
+  vector<Goods> catalog = _warehouse->get_catalog();
+
+
+  for (Goods goods : catalog) {
+    _shortages[goods.get_id()] = 0;
+    _reservations[goods.get_id()] = 0;
+  }
+}
+
+CMS::CMS(map<string, Quantity> list) {
+  _curr_id = 0;
+  _warehouse = new Warehouse(list);
+  vector<Goods> catalog = _warehouse->get_catalog();
 
 
   for (Goods goods : catalog) {
@@ -48,11 +60,12 @@ CMS::~CMS() {
     delete order;
   }
   _orders.clear();
+  delete _warehouse;
 }
 
 bool CMS::add_goods(string title) {
-  if (_warehouse.add_goods(title)) {
-    Goods *goods = _warehouse.get_goods_by_title(title);
+  if (_warehouse->add_goods(title)) {
+    Goods *goods = _warehouse->get_goods_by_title(title);
     if (goods) {
       _shortages[goods->get_id()] = 0;
       _reservations[goods->get_id()] = 0;
@@ -64,7 +77,7 @@ bool CMS::add_goods(string title) {
 }
 
 vector<Goods> CMS::get_catalog() {
-  return _warehouse.get_catalog();
+  return _warehouse->get_catalog();
 }
 
 map<GoodsID, Quantity> CMS::get_shortages() {
@@ -85,14 +98,14 @@ vector<Order *> CMS::get_order_list() {
 
 Order *CMS::get_order_info(OrderID id) {
   Order *order = get_order_by_id(id);
-  if (order) {
+  if (order != nullptr) {
     return get_order_copy(order);
   }
   return nullptr;
 }
 
 bool CMS::add_stock(map<GoodsID, Quantity> list) {
-  bool push_result = _warehouse.push(list);
+  bool push_result = _warehouse->push(list);
 
   if (push_result) {
     for (auto &it : list) {
@@ -108,7 +121,7 @@ bool CMS::add_stock(map<GoodsID, Quantity> list) {
 }
 
 int CMS::make_order(map<GoodsID, Quantity> list) {
-  if (!_warehouse.is_exist(list)) {
+  if (!_warehouse->is_exist(list)) {
     return -1;
   }
 
@@ -116,7 +129,7 @@ int CMS::make_order(map<GoodsID, Quantity> list) {
     GoodsID id = it.first;
     Quantity quantity = it.second;
 
-    int available = (int) (_warehouse.get_goods_quantity(id) - get_reserved_goods_quantity(id));
+    int available = (int) (_warehouse->get_goods_quantity(id) - get_reserved_goods_quantity(id));
     if (available < quantity) {
       _shortages[id] = quantity - available;
     }
@@ -131,7 +144,7 @@ int CMS::make_order(map<GoodsID, Quantity> list) {
 
 bool CMS::collect_order(OrderID id) {
   Order *order = get_order_by_id(id);
-  if (order && order->get_status() == Status::PROCESSING) {
+  if (order != nullptr && order->get_status() == Status::PROCESSING) {
     map<GoodsID, Quantity> goods_list = order->get_list();
     for (auto &it : goods_list) {
       GoodsID goods_id = it.first;
@@ -147,9 +160,9 @@ bool CMS::collect_order(OrderID id) {
 
 Order *CMS::get_order(OrderID id) {
   Order *order = get_order_by_id(id);
-  if (order && order->get_status() == Status::PREPARED) {
+  if (order != nullptr && order->get_status() == Status::PREPARED) {
     map<GoodsID, Quantity> goods_list = order->get_list();
-    if (_warehouse.take(goods_list)) {
+    if (_warehouse->take(goods_list)) {
       for (auto &it : goods_list) {
         GoodsID goods_id = it.first;
         Quantity goods_quantity = it.second;
