@@ -175,3 +175,11 @@ Order *CMS::get_order(OrderID id) {
 
   return nullptr;
 }
+
+Goods *CMS::get_good_by_id(GoodsID id) {
+  return _warehouse->get_goods_by_id(id);
+}
+
+Goods *CMS::get_good_by_title(string title) {
+  return _warehouse->get_goods_by_title(title);
+}
